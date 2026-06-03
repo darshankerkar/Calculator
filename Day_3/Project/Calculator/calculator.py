@@ -1,4 +1,6 @@
+"""Add function"""
 def add(num1, num2):
     return num1+num2
-
-print(add(3,4))
+# """Subtract function"""
+def subtract(num1, num2):
+    return num1-num2
