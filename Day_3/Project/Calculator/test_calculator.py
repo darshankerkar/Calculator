@@ -1,4 +1,5 @@
 from calculator import add
 
-def test_add(a, b):
-    assert add(4,5)==9
+def test_add():
+    assert add(4,5)==9 # asserts whether true or false
+    assert add(4,3)==7
