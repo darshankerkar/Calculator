@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - feature-1
+
+jobs:
+  test:
+    runs-on: ubuntu-latest # key: value
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: pip install pytest
+
+      - name : Run Tests
+        run: pytest
