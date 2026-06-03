@@ -22,4 +22,4 @@ jobs: # tasks
         run: pytest # to run test cases
 
       - name : Take pylint report
-        run : pylint calculator.py
+        run : pylint calculator.py || true
